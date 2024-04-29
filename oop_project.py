@@ -1,15 +1,24 @@
+from time import sleep as sl
 from bank_account import *
+from Process import *
 
-kishore = BankAccount(10000,"Kishore")
-durai = BankAccount(20000,"Durai")
 
-kishore.getBalance()
 
-durai.getBalance()
+accounts = dict()
+print("*************** Welcome ***************")
+print("""1.Create Account\n2.Balance Enquiry\n3.Withdraw\n4.Deposit""")
+option = int(input("Enter Option: "))
 
-durai.deposit(500)
-
-kishore.withdraw(100000)
-kishore.withdraw(10)
-
-kishore.transfer(100,durai)
+match option:
+    case 1:
+        creating_acc()
+        
+    # case 2:
+    #     print()
+        
+        
+    # case 3:
+    # case 4:
+    # case _:
+        print("Invalid option")
+        
