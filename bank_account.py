@@ -1,6 +1,8 @@
 class BalanceException(Exception):
     pass
 
+
+
 class BankAccount:
     def __init__(self, initialAmount, accName):
         self.balance = initialAmount
@@ -9,7 +11,7 @@ class BankAccount:
         
         
     def getBalance(self):
-        print(f"\nAccount '{self.name}' balance = Rs.{self.balance:.2f}")
+        print(f"Account '{self.name}' balance = Rs.{self.balance:.2f}")
         
     def deposit(self, amount):
         self.balance = self.balance + amount
